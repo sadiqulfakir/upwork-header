@@ -403,48 +403,16 @@
 	<script>
 	
 		function sidebarHandler(e) {
-			const sideBar = document.getElementById('sidebar');
-			
-			e.target.onclick = () => {
-				if(sideBar.classList.contains('active') === false){
-				sideBar.classList.add('active');
-				}else{
-				sideBar.classList.remove('active');
-				}
-			};
+			const sideBar = document.getElementById('sidebar').classList.toggle('active');
 		};
 		function findTalentHandler(e) {
-			const sideBar = document.getElementById('find-talent');
-			
-			e.target.onclick = () => {
-				if(sideBar.classList.contains('active') === false){
-				sideBar.classList.add('active');
-				}else{
-				sideBar.classList.remove('active');
-				}
-			};
+			const sideBar = document.getElementById('find-talent').classList.toggle('active');
 		};
 		function findWorkHandler(e) {
-			const sideBar = document.getElementById('find-work');
-			
-			e.target.onclick = () => {
-				if(sideBar.classList.contains('active') === false){
-				sideBar.classList.add('active');
-				}else{
-				sideBar.classList.remove('active');
-				}
-			};
+			const sideBar = document.getElementById('find-work').classList.toggle('active');
 		};
 		function whyUpworkHandler(e) {
-			const sideBar = document.getElementById('why-upwork');
-			
-			e.target.onclick = () => {
-				if(sideBar.classList.contains('active') === false){
-				sideBar.classList.add('active');
-				}else{
-				sideBar.classList.remove('active');
-				}
-			};
+			const sideBar = document.getElementById('why-upwork').classList.toggle('active');
 		};
 	</script>
 
