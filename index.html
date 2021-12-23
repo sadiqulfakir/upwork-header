@@ -158,6 +158,8 @@
 		}
 		.seconed-link {
 			padding: 10px;
+			display: flex;
+			justify-content: space-between;
 
 		}
 		.signup {
@@ -402,8 +404,35 @@
 										</aside>
 									</li>
 									<li class="seconed-link">
-										<span class="drop-item" href="">Let us find you that right talent</span>
+										<span onclick="LetusHandler(event)" class="drop-item" href="">Let us find you that right talent</span>
 										<i class="fas fa-angle-right"></i>
+										<aside id="sidebar-four" class="left-dropdown-two">
+
+											<header class="leftheader-two">
+												<div class="sidebar-text">
+													<i onclick="LetusHandler(event)" class="fas fa-angle-left"></i>
+													<span class="talent">Talent Scout™</span>
+												</div>
+												<nav class="login-class">
+													<span class="close-menu">
+														<i class="fas fa-times"></i>
+													</span>
+												</nav>
+											</header>
+											<div>
+												<ul class="left-dropbox-two">
+													<div class="first-link">
+														<a class="left-dropdown-two-item"href="">Development & IT</a>
+													</div>
+													<div class="first-link">
+														<a class="left-dropdown-two-item"href="">Design & Creative</a>
+													</div>
+													<div class="first-link">
+														<a class="left-dropdown-two-item"href="">Marketing</a>
+													</div>
+												</ul>
+											</div>
+										</aside>
 									</li>
 								</ul>
 							</div>
@@ -592,6 +621,9 @@
 		};
 		function projectHandler(e) {
 			const sideBar = document.getElementById('sidebar-three').classList.toggle('active');
+		};
+		function LetusHandler(e) {
+			const sideBar = document.getElementById('sidebar-four').classList.toggle('active');
 		};
 	</script>
 
