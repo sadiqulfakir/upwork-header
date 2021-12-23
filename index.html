@@ -214,6 +214,12 @@
 		.left-dropbox-two {
 			padding-left: 5px;
 		}
+		.left-dropdown-three-allitem-menu {
+			display: grid;
+			grid-template-columns: auto;
+			grid-gap: 5px;
+			padding-left: 10px;
+		}
 		.sidebar-text {
 			padding-left: 5px;
 		}
@@ -235,6 +241,29 @@
 		}
 		.item-two {
 			padding-left: 5px;
+		}
+		.catalog-image-3-0 {
+			width: 87px;
+			height: 78px;
+			margin: 0 20px 0 0 ;
+		}
+		.left-dropdown-three-item-menu {
+			display: flex;
+			align-items: center;
+			border: 1px solid;
+			border-radius: 5px;
+			border-color: #d8d9dc;
+		}
+		
+		@media (min-width: 480px){
+			.left-dropdown-three-allitem-menu {
+				grid-template-columns: auto auto;
+			}
+			
+		}
+		.left-dropdown-three-item {
+			color: #000;
+			font-family: Arial, sans-serif;
 		}
 
 	</style>
@@ -282,7 +311,7 @@
 											<header class="leftheader-two">
 												<div class="sidebar-text">
 													<i onclick="jobHandler(event)" class="fas fa-angle-left"></i>
-													<span class="talent">Talent Marketplace</span>
+													<span class="talent">Talent Marketplace™</span>
 												</div>
 												<nav class="login-class">
 													<span class="close-menu">
@@ -327,8 +356,50 @@
 										</aside>
 									</li>
 									<li class="seconed-link">
-										<span class="drop-item" href="">Browse and buy projects</span>
+										<span onclick="projectHandler(event)"class="drop-item" href="">Browse and buy projects</span>
 										<i class="fas fa-angle-right"></i>
+										<aside id="sidebar-three" class="left-dropdown-two">
+
+											<header class="leftheader-two">
+												<div class="sidebar-text">
+													<i onclick="projectHandler(event)" class="fas fa-angle-left"></i>
+													<span class="talent">Project Catalog ™</span>
+												</div>
+												<nav class="login-class">
+													<span class="close-menu">
+														<i class="fas fa-times"></i>
+													</span>
+												</nav>
+											</header>
+											<div>
+												<ul class="left-dropdown-three-allitem-menu">
+													<div class="left-dropdown-three-item-menu">
+														<img src="https://assets-global.website-files.com/603fea6471d9d8559d077603/604f4ea7489416f72c554d96_Logo%20Design%20Catalog.jpg" loading="lazy" alt="Catalog Image " class="catalog-image-3-0">
+														<a class="left-dropdown-three-item"href="">Logo Design </a>
+													</div>
+													<div class="left-dropdown-three-item-menu">
+														<img src="https://assets-global.website-files.com/603fea6471d9d8559d077603/604f4ea7489416370a554d98_Articles%20Catalog.jpg" loading="lazy" alt="Catalog Image " class="catalog-image-3-0">
+														<a class="left-dropdown-three-item"href="">Articles & Blog Posts</a>
+													</div>
+													<div class="left-dropdown-three-item-menu">
+														<img src="https://assets-global.website-files.com/603fea6471d9d8559d077603/604f4ea748941609d5554d9c_Wordpress%20Catalog.jpg" loading="lazy" alt="Catalog Image " class="catalog-image-3-0">
+														<a class="left-dropdown-three-item"href="">WordPress</a>
+													</div>
+													<div class="left-dropdown-three-item-menu">
+														<img src="https://assets-global.website-files.com/603fea6471d9d8559d077603/604f4ea7489416bb2e554d91_Social%20Media%20Catalog.jpg" loading="lazy" alt="Catalog Image " class="catalog-image-3-0">
+														<a class="left-dropdown-three-item"href=""> Social Media Marketing</a>
+													</div>
+													<div class="left-dropdown-three-item-menu">
+														<img src="https://assets-global.website-files.com/603fea6471d9d8559d077603/604f4ea74894161f68554d8d_Video%20Editing%20Catalog.jpg" loading="lazy" alt="Catalog Image " class="catalog-image-3-0">
+														<a class="left-dropdown-three-item"href="">Video Editing</a>
+													</div>
+													<div class="left-dropdown-three-item-menu">
+														<img src="https://assets-global.website-files.com/603fea6471d9d8559d077603/604f4ea74894162041554d93_SEO%20Catalog.jpg" loading="lazy" alt="Catalog Image " class="catalog-image-3-0">
+														<a class="left-dropdown-three-item"href="">SEO</a>
+													</div>
+												</ul>
+											</div>
+										</aside>
 									</li>
 									<li class="seconed-link">
 										<span class="drop-item" href="">Let us find you that right talent</span>
@@ -518,6 +589,9 @@
 		};
 		function jobHandler(e) {
 			const sideBar = document.getElementById('sidebar-two').classList.toggle('active');
+		};
+		function projectHandler(e) {
+			const sideBar = document.getElementById('sidebar-three').classList.toggle('active');
 		};
 	</script>
 
