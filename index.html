@@ -154,7 +154,7 @@
 		.first-link {
 			display: flex;
 			justify-content: space-between;
-			padding: 20px;
+			padding: 15px;
 		}
 		.seconed-link {
 			padding: 10px;
@@ -183,6 +183,9 @@
 		}
 					/*left-dropbox2*/
 		.leftheader-two {
+			height: 55px;
+			margin: 0px 0px 30px;
+			padding: 0px 15px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -227,6 +230,12 @@
 			display: flex;
 			align-items: center;
 		}
+		.left-dropbox-all-itm {
+			padding-left: 5px;
+		}
+		.item-two {
+			padding-left: 5px;
+		}
 
 	</style>
 </head>
@@ -257,14 +266,14 @@
 					</nav>
 				</header>
 				<div>
-					<ul class="">
+					<ul class="left-dropbox-all-itm">
 						<li  class="left-dropbox-findtalent">
 							<div class="first-link">
 								<span onclick="findTalentHandler(event)" class="drop-item" >Find Talent</span>
 								<i class="fas fa-angle-down"></i>
 							</div>
 							<div id="find-talent"class="left-dropbox">
-								<ul>
+								<ul class="item-two">
 									<li class="seconed-link">
 										<span onclick="jobHandler(event)" class="drop-item" href="">Post a job and Hire a pro</span>
 										<i class="fas fa-angle-right"></i>
@@ -332,7 +341,7 @@
 								<i class="fas fa-angle-down"></i>
 							</div>
 							<div id="find-work"class="left-dropbox">
-								<ul>
+								<ul class="item-two">
 									<li class="seconed-link">
 										<span class="drop-item" href="">Ways to earn</span>
 										<i class="fas fa-angle-right"></i>
@@ -348,7 +357,7 @@
 								<i class="fas fa-angle-down"></i>
 							</div>
 							<div id="why-upwork"class="left-dropbox">
-								<ul>
+								<ul class="item-two">
 									<li class="seconed-link">
 										<span class="drop-item" href="">Success Stories</span>
 										<i class="fas fa-angle-right"></i>
